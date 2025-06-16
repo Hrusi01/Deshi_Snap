@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appHometheme">
+
+
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/appHometheme"> <!-- Optional: add if needed -->
+
+        <!-- Inner container replacing LinearLayout -->
+        <RelativeLayout
+            android:id="@+id/top_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Top Row: Address Text + Cart Icon -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Address"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/cart_img"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/shopping_cart"
+                    android:paddingTop="10dp" />
+            </RelativeLayout>
+
+            <!-- Search bar below the top row -->
+            <include
+                android:id="@+id/search_bar"
+                layout="@layout/searchbar"
+                android:layout_below="@id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/greettitle_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/heading"
+
+        >
+
+        <TextView
+            android:id="@+id/greettitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="15dp"
+            android:text="Hello Admin ,"
+            android:textColor="#03FBAD"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taglinepart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greettitle"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="14dp"
+            android:text="Every"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taglinepart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/taglinepart1"
+            android:layout_toEndOf="@id/taglinepart1"
+            android:paddingLeft="8dp"
+            android:text="Snap"
+            android:textColor="#03FBAD"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/taglinepart1"
+            android:layout_toEndOf="@id/taglinepart2"
+            android:paddingLeft="8dp"
+            android:text="Appreciation..."
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/strokebar2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#85FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textView3"
+
+            />
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="15dp"
+            android:text="Admin Dash Board "
+            android:textColor="#03FBAD"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_below="@id/strokebar2"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greettitle_container"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/book_slot_root"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:background="@color/appHometheme">
+
+        <!-- SLOT ROW 1: 7AM - 10AM -->
+        <LinearLayout
+            android:id="@+id/time_7am_10am_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/time_7am_8am"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="View All Bookings"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/time_slot_bg"
+                android:layout_marginHorizontal="4dp" />
+
+            <TextView
+                android:id="@+id/time_8am_9am"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Manage User"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/time_slot_bg"
+
+                android:layout_marginHorizontal="4dp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/time_10am_1pm_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/book_slot_root"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/time_10am_11am"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Add / remove service"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/time_slot_bg"
+                android:padding="12dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <TextView
+                android:id="@+id/time_11am_12pm"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Send Notification"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/time_slot_bg"
+                android:padding="12dp"
+                android:layout_marginHorizontal="4dp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

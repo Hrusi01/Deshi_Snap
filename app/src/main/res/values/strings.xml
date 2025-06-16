@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Deshi Snap</string>
+    <string name="rating">4.80 (5 M Bookings)</string>
+    <string name="NotificationTitle">New Plumber Added !</string>
+    <string name="Notification_message">Lorem ipsum dolor sit amet consectetur. Nisl lacus neque eu susci.......
+    </string>
+    <string name="Notification_date">Today, 5:45 PM</string>
+    <string name="offer_description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+
+    </string>
+
+    <string name="font">sans-serif</string>
+
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#020D17</color>
+    <color name="overlay">#3DFFFFFF</color>
+    <color name="appHometheme">#182E41</color>
+    <color name="textcolor">#03FBAD</color>
+    <color name="nav_bg">#222B45</color> <!-- Dark blue background -->
+    <color name="nav_item_active">#00E676</color> <!-- Green for active item -->
+    <color name="nav_item_inactive">#C3C3C3</color> <!-- Grey for inactive items -->
+    <color name="nav_ripple">#1DE9B6</color> <!-- Ripple effect color -->
+    <color name="otp_box_colour">#F01F1E1E</color>
+</resources>
