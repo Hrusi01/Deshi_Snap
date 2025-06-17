@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_navigation"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -15,11 +15,14 @@
     <LinearLayout
         android:id="@+id/home_button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical"
-
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="TouchTargetSizeCheck"
+        android:background="@drawable/ripple_bg"
 
         >
 
@@ -47,6 +50,10 @@
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="TouchTargetSizeCheck"
+        android:background="@drawable/ripple_bg"
 
         >
 
@@ -74,7 +81,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="TouchTargetSizeCheck"
+        android:background="@drawable/ripple_bg"
+
+        >
 
         <ImageView
             android:id="@+id/inboximg"
@@ -101,7 +114,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="TouchTargetSizeCheck"
+        android:background="@drawable/ripple_bg"
+        >
 
         <ImageView
             android:id="@+id/profileimg"

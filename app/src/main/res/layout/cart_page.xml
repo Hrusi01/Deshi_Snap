@@ -33,7 +33,9 @@
             android:layout_centerVertical="false"
             android:layout_marginRight="16dp"
             android:paddingTop="10dp"
-            android:src="@drawable/shopping_cart" />
+            android:src="@drawable/shopping_cart"
+            android:background="@drawable/ripple_bg"
+            />
 
     </RelativeLayout>
     <View

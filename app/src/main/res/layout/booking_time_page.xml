@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/appHometheme">
 
     <RelativeLayout
@@ -134,13 +135,20 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:padding="4dp">
+                        android:padding="4dp"
+
+                        >
 
                         <RelativeLayout
+                            android:id="@+id/saturday_button"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/time_slot_bg"
-                            android:padding="8dp">
+                            android:padding="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            tools:ignore="TouchTargetSizeCheck"
+                            >
 
                             <TextView
                                 android:id="@+id/weekday1"
@@ -171,6 +179,18 @@
                                 android:textSize="14sp"
                                 android:layout_below="@id/date1"
                                 android:layout_centerHorizontal="true"/>
+
+                            <View
+                                android:id="@+id/overlay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:background="@drawable/gradiant_overlay"
+                                android:visibility="gone"
+                                android:clickable="false"
+                                android:focusable="false"
+                                />
                         </RelativeLayout>
                     </LinearLayout>
 

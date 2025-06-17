@@ -1,6 +1,8 @@
 package com.foodcafe.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -24,6 +26,24 @@ public class Booking_Time_QR_Page extends AppCompatActivity {
 
         TextView scan_qrcode_text= findViewById(R.id.scan_qrcode_text);
         Utils.applyGradientToText(scan_qrcode_text, "#04FDAA", "#01D3F8");
+
+
+        RelativeLayout slot = findViewById(R.id.saturday_button);
+        View overlay = slot.findViewById(R.id.overlay);
+
+        slot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (overlay.getVisibility() == View.VISIBLE) {
+                    overlay.setVisibility(View.GONE);
+                } else {
+                    overlay.setVisibility(View.VISIBLE);
+                    overlay.bringToFront(); // ensures it overlays correctly
+                }
+            }
+        });
+
+
 
 
 
